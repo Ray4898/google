@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>google</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div id="all">
+<body>
+<div style = "box-shadow: none;
+  border: none; "class = "ui fixed borderless topmenu menu">
+  <div class="item"><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"><text style="color:rgba(0,0,0,0.87)">About</text></a> </div>
+  <div class="item"><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"><text style="color:rgba(0,0,0,0.87)"> Store</text></a> </div>
+  <div class="right item">
+    <a href="https://mail.google.com/mail/?tab=wm&ogbl"><text style="color:rgba(0,0,0,0.87)">Gmail</text></a>
+  </div>
+  <div class="item">
+    <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl"><text style="color:rgba(0,0,0,0.87)">Images</text></a>
+  </div>
+  <div class="ui dropdown item">
+    <img style = "height:20px;width:20px" class = "ui mini image" src = "app.PNG" >
+
+    <div class="menu">
+      <div style = "width:250px" class="ui centered grid">
+        <div class ="ui three wide column">
+      <div class="item">New</div>
+          <div class="item">New.1</div>
+
+    </div>
+        <div class ="ui three wide column">
+          <div class="item">New2</div>
+
+        </div>
+        <div class ="ui three wide column">
+          <div class="item">New3</div>
+
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <div class ="item">
+    <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/"><button class="ui primary button">Sign in</button>
+    </a>
+  </div>
+</div>
+<div class = "mar" >
+  <img class = "ui centered image" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+  <div class = "ui centered container">
+    <div style="margin-left: 250px">
+  <div class="ui search">
+    <div style="width:600px; height:50px; margin-top: 30px; box-shadow: aliceblue;background-color: transparent;
+    border: none;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;" class="ui left icon input">
+      <i class="grey search icon"></i>
+      <input class="prompt" type="text" >
+
+    </div>
+    <div class="results"></div>
+  </div>
+  </div>
+</div>
+</div>
+<div style="margin-top: 20px">
+  <div class = "ui center aligned page grid" >
+    <div class = "three wide column">
+      <button  class="ui button">
+        Google Search
+      </button>
+    </div>
+
+    <div class = "three wide column">
+      <button class="ui button">
+        I am Feeling Lucky
+      </button>
+    </div>
+    </div>
+  </div>
+</body>
+</div>
+
+
+
+
+
+
+<script>
+  $('.ui.dropdown')
+      .dropdown()
+  ;
+  $('.ui.search')
+      .search({
+        apiSettings: {
+          url: '//api.github.com/search/repositories?q={query}'
+        },
+        fields: {
+          results : 'items',
+          title   : 'name',
+          url     : 'html_url'
+        },
+        minCharacters : 3
+      })
+  ;
+</script>
+</body>
+<footer>
+  <div style = "background-color: #f2f2f2; box-shadow: none; border: none" class = "ui borderless bottom fixed menu">
+    <div class = "ui fluid container">
+      <div class="item"><a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"><text style= "color:#5f6368;">Advertising</text></a> </div>
+      <div class="item"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"><text style= "color:#5f6368;">Businese</text></a> </div>
+      <div class="item"><a href="https://google.com/search/howsearchworks/?fg=1"><text style= "color:#5f6368;">How search work</text></a> </div>
+      <div class="right item"><a href="https://policies.google.com/privacy?fg=1"><text style= "color:#5f6368;">Privacy</text></a> </div>
+      <div class="item"><a href="https://policies.google.com/terms?fg=1"><text style= "color:#5f6368;">Term</text></a> </div>
+      <div class="item"><a href="https://www.google.com/preferences?hl=en"><text style= "color:#5f6368;">Setting</text></a> </div>
+    </div>
+  </div>
+</footer>
+
+</html>
